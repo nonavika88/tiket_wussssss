@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b5342418-d30b-4028-a718-a343f82fc4a4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from pemesanan]]>
+	</queryString>
+	<field name="KODE_PEMBELIAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_JADWAL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="BUS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KOTA_AWAL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KOTA_TUJUAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HARGA" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NAMA" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="JUMLAH_TIKET" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TOTAL" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="802" height="45" uuid="d9ece5d0-e64c-4f37-a783-95f9bbfb3c8b"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA TRANSAKSI PENJUALAN TIKET]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="9" y="2" width="60" height="30" uuid="831830f3-77a8-4d8a-993d-3a568f9accc8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KODE_PEMBELIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="2" width="59" height="30" uuid="d4e53a0d-9d48-4bce-888d-c0e48498ce3f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID_JADWAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="167" y="7" width="57" height="20" uuid="c0a6e178-559e-4cd5-b43f-0b1948c0b6a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[BUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="7" width="100" height="20" uuid="8c217d9e-ebee-4524-91c7-48ebce2c126d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KOTA_AWAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="7" width="100" height="20" uuid="9984bc10-71a4-48ea-b6d6-32f8e03345ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KOTA_TUJUAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="7" width="56" height="20" uuid="42d6dddd-ec88-4209-a984-9e991125a1dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[HARGA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="7" width="115" height="20" uuid="8ccf9006-458f-4d51-bc31-d73de1a5a888"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="673" y="2" width="50" height="30" uuid="037dd1a6-1fb1-4a31-b442-83a7f29f7477"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[JUMLAH_TIKET]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="728" y="2" width="71" height="20" uuid="61dabab5-1131-4ada-b298-ad25509ff21f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="9" width="60" height="20" uuid="8e9936bc-ffbe-4207-a7ff-ab899ffa602e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{KODE_PEMBELIAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="9" width="73" height="20" uuid="ee3ecfad-7f05-44bb-90b0-de96da33d5c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ID_JADWAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="167" y="9" width="57" height="20" uuid="170f52d3-9b8b-4ce1-abf0-9a23bcd50bf1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BUS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="9" width="100" height="20" uuid="ef4babb2-bfae-4f5f-a67b-879b244b951f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{KOTA_AWAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="354" y="10" width="100" height="20" uuid="a3a8acbf-6095-4c84-8734-2c0caf2ae590"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{KOTA_TUJUAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="10" width="56" height="20" uuid="88a771f9-79ad-4d58-bbb8-317a9085496c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{HARGA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="10" width="125" height="20" uuid="1c4e8d75-124b-4112-9dac-b5d8149fb317"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NAMA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="673" y="10" width="50" height="20" uuid="a76b3a8e-307b-49c0-8587-57967ec88876"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{JUMLAH_TIKET}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="728" y="9" width="71" height="20" uuid="1267d40e-4da2-49c2-9e01-88da1f824b36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{TOTAL}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

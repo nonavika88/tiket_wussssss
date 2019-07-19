@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="241adf5e-10a4-41b6-b92c-573a0b8e841e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from jadwal1]]>
+	</queryString>
+	<field name="ID_JADWAL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="BUS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KOTA_AWAL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KOTA_TUJUAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KEBERANGKATAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KEDATANGAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HARGA" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="0" width="530" height="45" uuid="19db3df2-8121-45b2-a846-a88e7d8bbdab"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA JADWAL BUS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="14" width="61" height="20" uuid="41f25cdf-efd8-48ee-b637-4cb5d31983e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID_JADWAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="14" width="65" height="20" uuid="e74127f3-5359-466c-b932-10c236c19a54"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[BUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="154" y="14" width="85" height="20" uuid="5f0f1b6a-8d4f-4619-8148-255cd28ff8df"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KOTA_AWAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="14" width="96" height="20" uuid="692009ad-82c2-4db7-b4f9-89c9598c4da5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KOTA_TUJUAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="352" y="2" width="55" height="45" uuid="86979565-441d-4cd3-b064-000428196b14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KEBERANGKATAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="2" width="47" height="45" uuid="9e0b949e-3e93-4d4d-9a19-2dff786ed362"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KEDATANGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="468" y="14" width="75" height="20" uuid="75bdcdc9-bf1f-43d1-967a-2689528c0e03"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[HARGA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="8" width="61" height="20" uuid="dfd3aaf7-7e76-4860-8f0a-8eb0c762d178"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ID_JADWAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="8" width="65" height="20" uuid="a6f87138-8adc-41e5-8e40-a3abc6f4e8a9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{BUS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="8" width="85" height="20" uuid="6c94927e-9591-4521-9234-8076df920054"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{KOTA_AWAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="251" y="8" width="96" height="20" uuid="bb78ef2b-b694-40d5-a570-cf907e3e3386"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{KOTA_TUJUAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="359" y="8" width="42" height="20" uuid="358d90d3-4dab-4af7-be48-9aca2ad97c2e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{KEBERANGKATAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="8" width="47" height="20" uuid="12da73de-5a51-41f5-a594-ffffa7cf908c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{KEDATANGAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="8" width="75" height="20" uuid="05d5382a-c836-439c-9f76-82d2cf651eab"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{HARGA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

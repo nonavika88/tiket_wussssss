@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9f52a44a-03c8-4c86-bcf1-2ce8e3fd62c0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from bus]]>
+	</queryString>
+	<field name="ID_BUS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="BUS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="65" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="280" height="45" uuid="359bae15-828f-4ae0-99fc-135bd79dbe60"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA BUS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="26" y="4" width="100" height="20" uuid="422d3e1b-1598-4ce6-bcd3-510f5b3320fd"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID_BUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="4" width="100" height="20" uuid="b128a9a2-440d-41b4-bdbb-1a1b4b1a0307"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[BUS]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="26" y="12" width="100" height="20" uuid="6c668cf8-5ff4-42f7-88e6-f98f84a7d44d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ID_BUS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="12" width="100" height="20" uuid="a54ce54f-7c35-41c7-9f76-5ed9f25d80d7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{BUS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
